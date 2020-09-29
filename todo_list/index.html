@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div id="content">
+      <h1>ToDo List</h1>
+      <div id="inputHeader">
+        <input type="text" placeholder="Enter Task" id="taskTextBox" />
+        <button id="addTaskButton">+</button>
+      </div>
+
+      <!-- Pending Tasks section -->
+      <label id="pendingLabel">Pending Tasks</label>
+
+      <div class="pendingTasks">
+        <ul id="pendingTasksUl"></ul>
+      </div>
+
+      <!-- Completed Tasks section -->
+      <label id="completedlabel">Completed Tasks</label>
+
+      <div class="completedTasks">
+        <ul id="completedTaskUl"></ul>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

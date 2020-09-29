@@ -1,0 +1,121 @@
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+}
+
+#inputHeader {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#addTaskButton {
+  background-color: #038fcc;
+  color: white;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+}
+
+#taskTextBox {
+  height: 50px;
+  width: 75%;
+  font-size: 18px;
+}
+
+#pendingTasksUl,
+#completedTaskUl {
+  list-style-type: none;
+  padding-inline-start: unset;
+}
+
+#pendingTasksUl li,
+#completedTaskUl li {
+  background-color: #038fcc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin-bottom: 20px;
+}
+.pendingTasks,
+.completedTasks {
+  width: 100%;
+  
+}
+
+#pendingLabel,
+#completedlabel {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.removeButton {
+  background-color: #038fcc;
+  color: white;
+  border: none;
+  font-size: 20px;
+  margin-right: 20px;
+  text-decoration-line: underline;
+}
+
+.checkBox {
+  width: 20px;
+  height: 30px;
+  margin-left: 20px;
+  /* background-color: #038fcc; */
+}
+
+.taskLabel {
+  font-size: 20px;
+}
+
+/* Desktop media queries */
+
+@media (min-width: 801px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  #content {
+    width: 75%;
+  }
+  h1 {
+    font-size: 50px;
+  }
+
+  #addTaskButton {
+    font-size: 30px;
+  }
+
+  #taskTextBox {
+    height: inherit;
+    width: 75%;
+    font-size: 20px;
+  }
+
+  #pendingLabel,
+  #completedlabel {
+    font-size: 30px;
+  }
+  #pendingTasksUl li,
+  #completedTaskUl li {
+    height: 70px;
+    margin-bottom: 20px;
+  }
+}
